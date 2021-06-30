@@ -49,7 +49,7 @@
                 <li>
                     <a href="../../s-gat-idiarn/.pages/form-memorando.php">
                         <i class="metismenu-icon pe-7s-note2"></i>
-                        Cadastro
+                        Registro de Programação
                     </a>
                 </li>
                 <li>

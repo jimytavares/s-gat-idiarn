@@ -12,8 +12,8 @@
     <meta name="description" content="This is an example dashboard created using build-in elements and components.">
     <meta name="msapplication-tap-highlight" content="no">
     
-    <link href="./../../../cofac/main.css" rel="stylesheet">
-    <link href="../../cofac/assets/css/style.css" rel="stylesheet">
+    <link href="./../../../s-gat-idiarn/main.css" rel="stylesheet">
+    <link href="../../s-gat-idiarn/assets/css/style.css" rel="stylesheet">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 

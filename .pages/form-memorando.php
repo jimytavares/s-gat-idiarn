@@ -30,10 +30,13 @@
                                     </div>
                                 </div>
                             </div>
+                            
+                            
 
                             <div class="page-title-actions">
+                                
                                 <button type="button" data-toggle="tooltip" title="Example Tooltip" data-placement="bottom" class="btn-shadow mr-3 btn btn-dark">
-                                    <i class="far fa-file-pdf"></i> Relatório
+                                    <i class="far fa-file-pdf"></i> Memorando
                                 </button>
                                 <div class="d-inline-block dropdown">
                                     <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-shadow dropdown-toggle btn btn-info">
@@ -78,29 +81,24 @@
                         </div>
                     </div>            
                     
-                    <!--Buttons 2 
-                    <ul class="body-tabs body-tabs-layout tabs-animated body-tabs-animated nav">
-                        <li class="nav-item">
-                            <a role="tab" class="nav-link active" id="tab-0" data-toggle="tab" href="#tab-content-0">
-                                <span>Layout</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a role="tab" class="nav-link" id="tab-1" data-toggle="tab" href="#tab-content-1">
-                                <span>Grid</span>
-                            </a>
-                        </li>
-</ul>-->
-                    
                     <!-- forms -->
                     <div class="tab-content">
                        
                         <div class="tab-pane tabs-animation fade show active" id="tab-content-0" role="tabpanel">
                            
-                            <div class="main-card mb-3 card">
+                            <!--<div class="main-card mb-3 card">
                                 <div class="card-body"><h5 class="card-title" style="color:#3f6ad8;">Período</h5>
                                        
                                     <form class="">
+                                        
+                                        <div class="form-group">
+                                                <label for="exampleFormControlSelect1">Fonte</label>
+                                                <select class="form-control" id="exampleFormControlSelect1" style="width:30%;">
+                                                  <option>..:: Selecione a Fonte ::..</option>
+                                                  <option>250</option>
+                                                  <option>281</option>
+                                                </select>
+                                           </div>
 
                                         <div class="row" style="margin-top:20px;">
                                             <div class="col-2">
@@ -117,11 +115,132 @@
                                     <div class="divider"></div>
                                         
                                 </div>
-                            </div>
+                            </div>-->
                             
                             <div class="main-card mb-3 card">
-                                <div class="card-body"><h5 class="card-title" style="color:#3f6ad8;">Plano de Atividade Semanal</h5>
-                                    <div><br>
+                                <div class="card-body"><h5 class="card-title" style="color:#3f6ad8;"></h5><br>
+                                    
+                                    <form class="">
+                                            
+                                            <!-- Area -->
+                                            <div class="form-group">
+                                                <label for="exampleFormControlSelect1">Área</label>
+                                                <select class="form-control" id="exampleFormControlSelect1" style="width:30%;">
+                                                  <option>..:: Selecione a Fonte ::..</option>
+                                                  <option>Vegetal</option>
+                                                  <option>Animal</option>
+                                                  <option>Administrativo/Suporte</option>
+                                                </select>
+                                            </div>
+                                        
+                                            <!-- Data inicio / Data fim / Pernoite -->
+                                            <div class="row" style="margin-top:20px;">
+                                                <div class="col-2">
+                                                    <p style="font-size:15px;"><i class="far fa-calendar-alt"></i> Selecione a Data Início:</p>
+                                                    <input class="w3-input w3-border" value="<?php echo date('Y-m-d');?>" type="date" name="datta" required>
+                                                </div>
+                                                <div class="col-2">
+                                                    <p style="font-size:15px;"><i class="far fa-calendar-alt"></i> Selecione a Data Fim:</p>
+                                                    <input class="w3-input w3-border" value="<?php echo date('Y-m-d');?>" type="date" name="datta" required>
+                                                </div>
+                                                <div class="col">
+                                                    <p>Pernoite:</p>
+                                                    <div class="form-check">
+                                                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                      <label class="form-check-label" for="exampleRadios1">
+                                                        Sim
+                                                      </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                      <label class="form-check-label" for="exampleRadios2">
+                                                        Não
+                                                      </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <br>
+                                        
+                                            <!-- Fonte -->
+                                            <div class="form-group">
+                                                <label for="exampleFormControlSelect1">Fonte</label>
+                                                <select class="form-control" id="exampleFormControlSelect1" style="width:30%;">
+                                                  <option>..:: Selecione a Fonte ::..</option>
+                                                  <option>250 (Nao tem meta)</option>
+                                                  <option>281</option>
+                                                </select>
+                                            </div>
+                                        
+                                            <!-- Atividade a ser realizada -->
+                                            <div class="form-group">
+                                                <label for="exampleFormControlSelect1">Atividade a ser realizada</label>
+                                                <select class="form-control" id="exampleFormControlSelect1" style="width:50%;">
+                                                  <option>..:: Selecione a atividade ::..</option>
+                                                  <option>15.1 Coleta de Leite</option>
+                                                  <option>14.8 Vistoria para registro de estabelecimento</option>
+                                                  <option>14.3 Supervisão</option>
+                                                </select>
+                                            </div>
+                                        
+                                            <!-- Ação / Meta -->
+                                            <div class="row">
+                                                <div class="col-3">
+                                                     <div class="form-group">
+                                                        <label for="exampleFormControlSelect1">Ação <span style="color:gray;">(Automatico, dependendo da atividade)</span></label>
+                                                        <select class="form-control" id="exampleFormControlSelect1" style="width:100%;">
+                                                          <option>..:: Selecione a Ação ::..</option>
+                                                          <option>1323</option>
+                                                          <option>24234</option>
+                                                          <option>3242</option>
+                                                          <option>4312</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlSelect1">Meta <span style="color:gray;">(Automatico, dependendo da atividade)</span> <span style="color:red;"><b></b></span></label>
+                                                        <select class="form-control" id="exampleFormControlSelect1" style="width:100%;">
+                                                          <option>..:: Selecione a Fonte ::..</option>
+                                                          <option>250</option>
+                                                          <option>281</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!--   -->
+                                            <div class="">
+
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlSelect1">Informe quantidade de pessoas</label>
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                      <option>4</option>
+                                                      <option>5</option>
+                                                    </select>
+                                                  </div>
+
+                                                <div class="form-row">
+                                                    <div class="col-md-6">
+                                                        <div class="position-relative form-group"><label for="exampleEmail11" class="">Nome 01</label><input name="email" id="exampleEmail11" placeholder="*Informe o nome" type="name" class="form-control"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-md-6">
+                                                        <div class="position-relative form-group"><label for="exampleEmail11" class="">Nome 02</label><input name="email" id="exampleEmail11" placeholder="*Informe o nome" type="name" class="form-control"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-md-6">
+                                                        <div class="position-relative form-group"><label for="exampleEmail11" class="">Nome 03</label><input name="email" id="exampleEmail11" placeholder="*Informe o nome" type="name" class="form-control"></div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        
                                         <form class="was-validated">
                                             
                                             <div class="row">
@@ -173,58 +292,113 @@
                                                         <div class="invalid-feedback">Selecione o destino</div>
                                                     </div>
                                                 </div>
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <p>4º Município de Destino</p>
+                                                        <select class="custom-select" required>
+                                                          <option value="">Destino</option>
+                                                          <option value="1">Apodi-RN</option>
+                                                          <option value="2">Caraúbas-RN</option>
+                                                          <option value="3">Dantas-RN</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">Selecione o destino</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <p>5º Município de Destino</p>
+                                                        <select class="custom-select" required>
+                                                          <option value="">Destino</option>
+                                                          <option value="1">Apodi-RN</option>
+                                                          <option value="2">Caraúbas-RN</option>
+                                                          <option value="3">Dantas-RN</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">Selecione o destino</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <div class="form-group">
+                                                        <p>Município de Origem</p>
+                                                        <select class="custom-select" required>
+                                                          <option value="">Origem</option>
+                                                          <option value="1">Natal</option>
+                                                          <option value="2">Parnamirim</option>
+                                                          <option value="3">Teste</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">Selecione a origem</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <p>1º Município de Destino</p>
+                                                        <select class="custom-select" required>
+                                                          <option value="">Destino</option>
+                                                          <option value="1">Apodi-RN</option>
+                                                          <option value="2">Caraúbas-RN</option>
+                                                          <option value="3">Dantas-RN</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">Selecione o destino</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <p>2º Município de Destino</p>
+                                                        <select class="custom-select" required>
+                                                          <option value="">Destino</option>
+                                                          <option value="1">Apodi-RN</option>
+                                                          <option value="2">Caraúbas-RN</option>
+                                                          <option value="3">Dantas-RN</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">Selecione o destino</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <p>3º Município de Destino</p>
+                                                        <select class="custom-select" required>
+                                                          <option value="">Destino</option>
+                                                          <option value="1">Apodi-RN</option>
+                                                          <option value="2">Caraúbas-RN</option>
+                                                          <option value="3">Dantas-RN</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">Selecione o destino</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <p>4º Município de Destino</p>
+                                                        <select class="custom-select" required>
+                                                          <option value="">Destino</option>
+                                                          <option value="1">Apodi-RN</option>
+                                                          <option value="2">Caraúbas-RN</option>
+                                                          <option value="3">Dantas-RN</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">Selecione o destino</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <p>5º Município de Destino</p>
+                                                        <select class="custom-select" required>
+                                                          <option value="">Destino</option>
+                                                          <option value="1">Apodi-RN</option>
+                                                          <option value="2">Caraúbas-RN</option>
+                                                          <option value="3">Dantas-RN</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">Selecione o destino</div>
+                                                    </div>
+                                                </div>
                                             </div>
                                            
-                                           <div class="form-group">
-                                                <label for="exampleFormControlSelect1">Atividade a ser realizada</label>
-                                                <select class="form-control" id="exampleFormControlSelect1">
-                                                  <option>..:: Selecione a atividade ::..</option>
-                                                  <option>15.1 Coleta de Leite</option>
-                                                  <option>14.8 Vistoria para registro de estabelecimento</option>
-                                                  <option>14.3 Supervisão</option>
-                                                </select>
-                                           </div>
-                                           
                                            <div class="row">
-                                               <div class="col">
-                                                   <div class="form-group">
-                                                        <label for="exampleFormControlSelect1">Ação</label>
-                                                        <select class="form-control" id="exampleFormControlSelect1">
-                                                          <option>..:: Selecione a Ação ::..</option>
-                                                          <option>1323</option>
-                                                          <option>24234</option>
-                                                          <option>3242</option>
-                                                          <option>4312</option>
-                                                        </select>
-                                                   </div>
-                                               </div>
-                                               <div class="col">
-                                                   <div class="form-group">
-                                                        <label for="exampleFormControlSelect1">Fonte</label>
-                                                        <select class="form-control" id="exampleFormControlSelect1">
-                                                          <option>..:: Selecione a Fonte ::..</option>
-                                                          <option>1</option>
-                                                          <option>2</option>
-                                                          <option>3</option>
-                                                          <option>4</option>
-                                                          <option>5</option>
-                                                        </select>
-                                                   </div>
-                                               </div>
-                                               <div class="col">
-                                                   <div class="form-group">
-                                                        <label for="exampleFormControlSelect1">Pernoite</label>
-                                                        <select class="form-control" id="exampleFormControlSelect1">
-                                                          <option>..:: sim ou não ::..</option>
-                                                          <option>Sim</option>
-                                                          <option>Não</option>
-                                                        </select>
-                                                   </div>
-                                               </div>
+                                              
                                                <div class="col">
                                                    <div class="form-group">
                                                         <label for="exampleFormControlSelect1">Total de Dárias</label>
-                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                        <select class="form-control" id="exampleFormControlSelect1" style="width:30%;">
                                                           <option>Não há diária</option>
                                                           <option>1,0</option>
                                                           <option>3,0</option>
@@ -233,47 +407,14 @@
                                                </div>
                                            </div>
                                         
+                                            <button class="btn btn-success">Salvar</button>
+                                        <button class="btn btn-primary">Gravar Rascunho</button>
+                                            
                                         </form>
                                     </div>
                                 </div>
                             </div>
                            
-                            <div class="main-card mb-3 card">
-                                <div class="card-body"><h5 class="card-title" style="color:#3f6ad8;">Equipe Técnica</h5>
-                                    <form class="">
-                                      
-                                        <br><div class="form-group">
-                                            <label for="exampleFormControlSelect1">Informe quantidade de pessoas</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
-                                              <option>1</option>
-                                              <option>2</option>
-                                              <option>3</option>
-                                              <option>4</option>
-                                              <option>5</option>
-                                            </select>
-                                          </div>
-                                       
-                                        <div class="form-row">
-                                            <div class="col-md-6">
-                                                <div class="position-relative form-group"><label for="exampleEmail11" class="">Nome 01</label><input name="email" id="exampleEmail11" placeholder="*Informe o nome" type="name" class="form-control"></div>
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="col-md-6">
-                                                <div class="position-relative form-group"><label for="exampleEmail11" class="">Nome 02</label><input name="email" id="exampleEmail11" placeholder="*Informe o nome" type="name" class="form-control"></div>
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="col-md-6">
-                                                <div class="position-relative form-group"><label for="exampleEmail11" class="">Nome 03</label><input name="email" id="exampleEmail11" placeholder="*Informe o nome" type="name" class="form-control"></div>
-                                            </div>
-                                        </div>
-                                        
-                                        <button class="btn btn-primary">Enviar</button>
-                                        
-                                    </form>
-                                </div>
-                            </div>
                             
                         </div>
 
@@ -318,6 +459,7 @@
                                         <div class="position-relative row form-check">
                                             <div class="col-sm-10 offset-sm-2">
                                                 <button class="btn btn-secondary">Submit</button>
+                                                
                                             </div>
                                         </div>
                                     </form>

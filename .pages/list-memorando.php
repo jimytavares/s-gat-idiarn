@@ -88,6 +88,7 @@
                             <table class="mb-0 table table-bordered">
                                 <thead>
                                 <tr>
+                                    <th>Nº Processo</th>
                                     <th>Período</th>
                                     <th>Equipe Técnica</th>
                                     <th>Origem</th>
@@ -102,6 +103,7 @@
                                 </thead>
                                 <tbody>
                                 <tr>
+                                    <td>105105150.150</td>
                                     <th scope="row">19/10/2021</th>
                                     <td>João Maria da silva <br> Lucas Ferreira de Souza</td>
                                     <td>Mossoró-RN</td>
@@ -114,6 +116,7 @@
                                     <td style="color:red; text-align:center;">Não</td>
                                 </tr>
                                 <tr>
+                                    <td></td>
                                     <th scope="row">26/10/2021</th>
                                     <td>Fernanda Lucena Julia</td>
                                     <td>Natal-RN</td>
@@ -126,6 +129,7 @@
                                     <td style="color:#1aca0c; text-align:center;">Sim</td>
                                 </tr>
                                 <tr>
+                                    <td></td>
                                     <th scope="row">04/11/2021 <br> 05/11/2021</th>
                                     <td>João Maria da silva</td>
                                     <td>Mossóro-RN</td>
