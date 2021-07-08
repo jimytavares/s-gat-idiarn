@@ -71,6 +71,15 @@
                     </a>
                 </li>
                 
+                <!-- PRESTACAO DE CONTAS -->
+                <li class="app-sidebar__heading" style="padding-top:30px;"><i class="fas fa-paste" style="font-size:22px;"></i> Prestação de Contas</li>
+                <li>
+                    <a href="../../s-gat-idiarn/.pages/list-relatorioAtividades.php">
+                        <i class="metismenu-icon pe-7s-note2"></i>
+                        Relatório de Atividades
+                    </a>
+                </li>
+                
                 <!-- LINE 02 -->
                 <li class="app-sidebar__heading" style="padding-top:10px;"><i class="fas fa-user-lock" style="font-size:18px;"></i> Administrador</li>
                 <li>
