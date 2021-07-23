@@ -104,7 +104,7 @@
                                 <tr>
                                     <th style="text-align:center;"><i class="fas fa-times" style="font-size:30px; color:red;"></i></th>
                                     <th scope="row">04/11/2021 <br> 05/11/2021</th>
-                                    <td>Fernanda Lucena Julia</td>
+                                    <td>Fernanda Lucena Julia <br> Breno eduardo</td>
                                     <td>Mossóro-RN</td>
                                     <td>Apodi-RN</td>
                                     <td>11</td>
@@ -166,6 +166,7 @@
             </div> 
             
             <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+            
         </div>
     
     </div><!-- all page -->
