@@ -128,7 +128,7 @@
                                         </div>
                                         
                                         <!-- Fonte -->
-                                        <div class="form-group">
+                                        <div class="form-group" style="margin-top:10px;">
                                             <label for="exampleFormControlSelect1">Fonte:</label>
                                             <select class="form-control" id="exampleFormControlSelect1" style="width:15%;">
                                               <option></option>
